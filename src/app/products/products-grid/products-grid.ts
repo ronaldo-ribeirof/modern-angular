@@ -51,6 +51,10 @@ export class ProductsGrid {
     );
   });
 
+  protected addToCart(product: Product) {
+    console.log('Added to cart: ', product.name);
+  }
+
   protected clearSearch() {
     this.searchTerm.set('');
   }
